@@ -1,0 +1,34 @@
+{
+  "name": "react-applet",
+  "version": "1.0.0",
+  "description": "react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1562841176/react-applet.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "react-router"
+  ],
+  "author": "zzj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1562841176/react-applet/issues"
+  },
+  "homepage": "https://github.com/1562841176/react-applet#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-react": "^6.24.1",
+    "webpack": "^4.27.1",
+    "webpack-dev-server": "^3.1.10"
+  }
+}
