@@ -15,4 +15,4 @@ class App extends React.Component{
     }
 }
 // 写好的组件render给DOM，用到ReactDOM.render方法
-ReactDOM.render(<App />,document.getElementById('app'))
+ReactDOM.render(<ToDoApp />,document.getElementById('app'))
