@@ -1,19 +1,20 @@
-// react app 的根组件
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import ToDoAppContainer from './containers/ToDoAppContainer';
+import configureStore from './redux/configureStore';
 
-import React from 'react'
-import ReactDOM from 'react-dom'
+const store = configureStore();
 
-import ToDoApp from './components/ToDoApp'
- 
-class App extends React.Component{
-   
-    render(){
-        return(
-            <div>
-                hello world
-            </div>
-        )      
-    }
+class App extends React.Component {
+  render(){
+    return(
+      <Provider store={store}>
+        <ToDoAppContainer />
+      </Provider>
+    );
+  }
 }
-// 写好的组件render给DOM，用到ReactDOM.render方法
-ReactDOM.render(<ToDoApp />,document.getElementById('app'))
+
+ReactDOM.render(<App />, document.getElementById('app'));
+

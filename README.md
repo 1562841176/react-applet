@@ -14,3 +14,8 @@
 *componentWillUnmount* 组件将要卸载时调用，一些事件监听和定时器需要在此刻清除
 * ### redux
 redux采用的方法是把数据处理分为reducer functions、action creators和actions然后组合在一起工作流线型的处理数据。
+
+*createStore* 是由redux提供的用来初始化store的函数， 
+*applyMiddleware*是用来添加我们需要的中间件的。
+*combineReducers* 用来把多个reducers合并为一个单一实体。
+*reateLogger* 就是我们这里唯一使用的一个中间件，可以console出每一个action后数据的详细处理过程，给调试带来了很大方便。
