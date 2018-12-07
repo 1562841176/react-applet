@@ -1,4 +1,4 @@
-# react-applet  ## [查看](https://www.jianshu.com/p/324fd1c124ad)
+# react-applet   [查看](https://www.jianshu.com/p/324fd1c124ad)
 
 * ### content-base
 设定webpack-dev-server伺服的directory。如果不进行设定的话，默认是在当前目录下。
