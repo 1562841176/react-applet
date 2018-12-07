@@ -12,7 +12,7 @@ module.exports = {
           exclude: /node_modules/,
           loader: 'babel-loader',
           query: {
-              plugins: [],
+              plugins: ['@babel/plugin-proposal-class-properties'],
               presets: ['@babel/env', '@babel/react']
           }
       }, {
