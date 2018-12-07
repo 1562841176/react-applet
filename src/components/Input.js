@@ -2,7 +2,7 @@
 import React from "react"
 
 
-const Input =(onChange, onSubmit,value)=>(
+const Input =({onChange, onSubmit,value})=>(
     <form onSubmit={onSubmit}>
         <div className="form-group">
         <label htmlFor="listInput" >Email address</label>
