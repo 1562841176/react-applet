@@ -16,12 +16,14 @@ import {
 
 
 function mapStateToProps(state){
+    console.log("mapStateToProps:"+JSON.stringify(state));
     return {
         toDoApp:state.toDoApp
     }
 }
 
 function mapDispatchToProps(dispatch){
+    console.log("mapDispatchToProps:");
     return {
         inputChange: (value) => dispatch(inputChange(value)), // we added this
         inputSubmit: () => dispatch(inputSubmit()),

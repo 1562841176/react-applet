@@ -30,3 +30,8 @@ redux采用的方法是把数据处理分为reducer functions、action creators�
 *applyMiddleware*是用来添加我们需要的中间件的。
 *combineReducers* 用来把多个reducers合并为一个单一实体。
 *reateLogger* 就是我们这里唯一使用的一个中间件，可以console出每一个action后数据的详细处理过程，给调试带来了很大方便。
+
+* ### mapStateToProps
+`mapStateToProps`是一个函数，用于建立组件跟 store 的 state 的映射关系。作为一个函数，它可以传入两个参数，结果一定要返回一个 object 
+
+mapStateToProps可以不传，如果不传，组件不会监听store的变化，也就是说Store的更新不会引起UI的更新 
