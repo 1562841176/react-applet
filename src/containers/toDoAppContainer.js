@@ -21,7 +21,7 @@ function mapStateToProps(state){
     }
 }
 
-function mapDispatchToProps(){
+function mapDispatchToProps(dispatch){
     return {
         inputChange: (value) => dispatch(inputChange(value)), // we added this
         inputSubmit: () => dispatch(inputSubmit()),
